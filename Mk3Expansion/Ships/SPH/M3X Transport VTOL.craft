@@ -1,5 +1,5 @@
 ship = M3X Transport VTOL
-version = 1.5.0
+version = 1.8.0
 description = VTOL Transport. ¨AG 1: Toggle Afterburner¨AG2: Toggle Main engines¨AG 3: Toggle Hover engines¨AG 4: Toggle Ramp
 type = SPH
 size = 14.2084007,7.34912872,20.4160194
@@ -8,6 +8,10 @@ persistentId = 2380919460
 rot = 0,0,0,0
 missionFlag = Mk3Expansion/Agencies/AI
 vesselType = Plane
+upgraded = 1.12 Protective Rocket Nose Cone Mk7 replacement // Replaces the old Protective Rocket Nose Cone Mk7 for the new Protective Rocket Nose Cone Mk7.
+upgraded = 1.12 RV-105 RCS Thruster Block replacement // Replaces the old RV-105 RCS Thruster Block for the new RV-105 RCS Thruster Block.
+upgraded = 1.8 ModuleControlSurface // Upgrades control authority settings for control surfaces.
+upgraded = 1.8 ModuleAeroSurface // Upgrades control authority settings for control surfaces.
 PART
 {
 	part = M3X.ShortAdapter_4293481608
@@ -39,10 +43,10 @@ PART
 	link = spotLight2_4292525578
 	link = M3X.SAS_4292160710
 	link = pointyNoseConeA_4291306616
-	link = rocketNoseCone_4293467936
+	link = rocketNoseCone.v2_4293467936
 	link = R8winglet_4290499820
 	link = R8winglet_4290499238
-	attN = top,rocketNoseCone_4293467936_0|0.9375|0
+	attN = top,rocketNoseCone.v2_4293467936_0|0.9375|0
 	attN = bottom,M3X.SAS_4292160710_0|-0.9375|0
 	EVENTS
 	{
@@ -59,7 +63,7 @@ PART
 		isEnabled = True
 		stagingEnabled = True
 		moduleID = fuelSwitch
-		currentSubtype = LiquidFuel/Oxidizer
+		currentSubtype = LF+Ox
 		EVENTS
 		{
 		}
@@ -1456,14 +1460,14 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = ramAirIntake_4291019892
-	link = turboJet_4291019844
-	link = GearMedium_4291019710
-	link = RCSBlock_4290989888
 	sym = radialEngineBody_4291019096
 	srfN = srfAttach,M3X.WingSegmentB_4291020010
 	attN = top,ramAirIntake_4291019892_0|0.9375|0
 	attN = bottom,turboJet_4291019844_0|-0.9375|0
+	link = ramAirIntake_4291019892
+	link = turboJet_4291019844
+	link = GearMedium_4291019710
+	link = RCSBlock.v2_4290989888
 	EVENTS
 	{
 	}
@@ -2927,6 +2931,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 25
 		EVENTS
 		{
 		}
@@ -3076,14 +3081,14 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = ramAirIntake_4291019050
-	link = turboJet_4291019002
-	link = GearMedium_4291018868
-	link = RCSBlock_4290656554
 	sym = radialEngineBody_4291019938
 	srfN = srfAttach,M3X.WingSegmentB_4291019168
 	attN = top,ramAirIntake_4291019050_0|0.9375|0
 	attN = bottom,turboJet_4291019002_0|-0.9375|0
+	link = ramAirIntake_4291019050
+	link = turboJet_4291019002
+	link = GearMedium_4291018868
+	link = RCSBlock.v2_4290656554
 	EVENTS
 	{
 	}
@@ -4547,6 +4552,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 25
 		EVENTS
 		{
 		}
@@ -6172,6 +6178,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		aeroDeployAngle = 60
 		EVENTS
 		{
 		}
@@ -6270,6 +6277,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		aeroDeployAngle = 60
 		EVENTS
 		{
 		}
@@ -6950,10 +6958,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
+	attN = top,Mk1FuselageStructural_4291016900_0|0|0
 	link = sweptWing2_4291016764
 	link = sweptWing2_4291016568
-	link = RCSBlock_4291016372
-	attN = top,Mk1FuselageStructural_4291016900_0|0|0
+	link = RCSBlock.v2_4291016372
 	EVENTS
 	{
 	}
@@ -7085,6 +7093,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 25
 		EVENTS
 		{
 		}
@@ -7161,6 +7170,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 25
 		EVENTS
 		{
 		}
@@ -7293,6 +7303,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 25
 		EVENTS
 		{
 		}
@@ -7369,6 +7380,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 25
 		EVENTS
 		{
 		}
@@ -7397,7 +7409,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4291016372
+	part = RCSBlock.v2_4291016372
 	partName = Part
 	persistentId = 2392168767
 	pos = -0.347831368,15.6612291,-14.057044
@@ -7676,7 +7688,7 @@ PART
 }
 PART
 {
-	part = rocketNoseCone_4293467936
+	part = rocketNoseCone.v2_4293467936
 	partName = Part
 	persistentId = 3112297131
 	pos = -0.347089469,12.7770014,1.39069438
@@ -7699,9 +7711,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = RCSBlock_4290988474
-	link = spotLight1_4290988412
 	attN = bottom,M3X.ShortAdapter_4293481608_0|0|0
+	link = RCSBlock.v2_4290988474
+	link = spotLight1_4290988412
 	EVENTS
 	{
 	}
@@ -7714,7 +7726,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4290988474
+	part = RCSBlock.v2_4290988474
 	partName = Part
 	persistentId = 3504602229
 	pos = -0.356723905,12.7679443,3.36523581
@@ -7900,6 +7912,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 129.5
 		stagingEnabled = True
+		deployAngle = 32.375
 		EVENTS
 		{
 		}
@@ -7976,6 +7989,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 129.5
 		stagingEnabled = True
+		deployAngle = 32.375
 		EVENTS
 		{
 		}
@@ -8052,6 +8066,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 129.5
 		stagingEnabled = True
+		deployAngle = 32.375
 		EVENTS
 		{
 		}
@@ -8128,6 +8143,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 129.5
 		stagingEnabled = True
+		deployAngle = 32.375
 		EVENTS
 		{
 		}
@@ -8156,7 +8172,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4290989888
+	part = RCSBlock.v2_4290989888
 	partName = Part
 	persistentId = 4252356063
 	pos = -7.09688997,12.9795704,-5.1931386
@@ -8224,7 +8240,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4290656554
+	part = RCSBlock.v2_4290656554
 	partName = Part
 	persistentId = 1822771272
 	pos = 6.40270948,12.9795704,-5.1931386
@@ -8340,6 +8356,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 15
 		EVENTS
 		{
 		}
@@ -8416,6 +8433,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 15
 		EVENTS
 		{
 		}

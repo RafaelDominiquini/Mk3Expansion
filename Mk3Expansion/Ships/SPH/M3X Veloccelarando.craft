@@ -1,5 +1,5 @@
 ship = M3X Veloccelarando
-version = 1.5.0
+version = 1.8.0
 description = Alternate name: TurboZoomGoFastinator
 type = SPH
 size = 12.3551359,5.68212509,16.9489059
@@ -8,6 +8,7 @@ persistentId = 865048873
 rot = 0,0,0,1
 missionFlag = Mk3Expansion/Agencies/AI
 vesselType = Debris
+upgraded = 1.8 ModuleControlSurface // Upgrades control authority settings for control surfaces.
 PART
 {
 	part = Mark1Cockpit_4294550228
@@ -421,6 +422,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 15
 		EVENTS
 		{
 		}
@@ -497,6 +499,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 15
 		EVENTS
 		{
 		}
@@ -572,6 +575,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 25
 		EVENTS
 		{
 		}
@@ -649,7 +653,7 @@ PART
 		isEnabled = True
 		stagingEnabled = True
 		moduleID = fuelSwitch
-		currentSubtype = Liquid Fuel
+		currentSubtype = LF
 		EVENTS
 		{
 		}
@@ -738,7 +742,7 @@ PART
 		isEnabled = True
 		stagingEnabled = True
 		moduleID = fuelSwitch
-		currentSubtype = Liquid Fuel
+		currentSubtype = LF
 		EVENTS
 		{
 		}
@@ -1382,6 +1386,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 15
 		EVENTS
 		{
 		}
@@ -1458,6 +1463,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 15
 		EVENTS
 		{
 		}
@@ -1534,6 +1540,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 15
 		EVENTS
 		{
 		}
@@ -1610,6 +1617,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 15
 		EVENTS
 		{
 		}

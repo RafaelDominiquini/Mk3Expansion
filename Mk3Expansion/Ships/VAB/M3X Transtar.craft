@@ -1,5 +1,5 @@
 ship = M3X Transtar
-version = 1.5.0
+version = 1.8.0
 description = Mk3 Space Shuttle Orbiter. ¨Ag1: Toggle Bay doors & OMS¨AG2: Toggle Solar Panels
 type = VAB
 size = 12.2502213,23.511013,15.804575
@@ -8,6 +8,7 @@ persistentId = 4128491279
 rot = 0,0,0,1
 missionFlag = Squad/Flags/stripes
 vesselType = Debris
+upgraded = 1.8 ModuleControlSurface // Upgrades control authority settings for control surfaces.
 PART
 {
 	part = mk3Cockpit.Shuttle_4294553342
@@ -1191,6 +1192,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 25
 		EVENTS
 		{
 		}
@@ -1267,6 +1269,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 25
 		EVENTS
 		{
 		}
@@ -1343,6 +1346,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 25
 		EVENTS
 		{
 		}
@@ -1419,6 +1423,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 25
 		EVENTS
 		{
 		}
@@ -1495,6 +1500,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 25
 		EVENTS
 		{
 		}
@@ -2422,6 +2428,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 25
 		EVENTS
 		{
 		}
@@ -5112,7 +5119,7 @@ PART
 		isEnabled = True
 		stagingEnabled = True
 		moduleID = fuelSwitch
-		currentSubtype = LiquidFuel/Oxidizer
+		currentSubtype = LF+Ox
 		EVENTS
 		{
 		}
@@ -5433,7 +5440,7 @@ PART
 		isEnabled = True
 		stagingEnabled = True
 		moduleID = fuelSwitch
-		currentSubtype = LiquidFuel/Oxidizer
+		currentSubtype = LF+Ox
 		EVENTS
 		{
 		}

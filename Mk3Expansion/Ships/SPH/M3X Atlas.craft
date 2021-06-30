@@ -1,5 +1,5 @@
 ship = M3X Atlas
-version = 1.5.0
+version = 1.8.0
 description = Infinite-range Mk3 cargoplane.¨AG 1: Toggle Ramp.
 type = SPH
 size = 27.924324,10.1034069,25.260191
@@ -8,6 +8,8 @@ persistentId = 1043409505
 rot = 0,0,0,1
 missionFlag = Mk3Expansion/Agencies/AI
 vesselType = Debris
+upgraded = 1.8 ModuleControlSurface // Upgrades control authority settings for control surfaces.
+upgraded = 1.8 ModuleAeroSurface // Upgrades control authority settings for control surfaces.
 PART
 {
 	part = M3X.Precooler_4293551014
@@ -402,6 +404,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 15
 		EVENTS
 		{
 		}
@@ -494,6 +497,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 15
 		EVENTS
 		{
 		}
@@ -585,6 +589,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 15
 		EVENTS
 		{
 		}
@@ -1294,6 +1299,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 15
 		EVENTS
 		{
 		}
@@ -1386,6 +1392,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 15
 		EVENTS
 		{
 		}
@@ -2568,6 +2575,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 15
 		EVENTS
 		{
 		}
@@ -2644,6 +2652,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 15
 		EVENTS
 		{
 		}
@@ -2721,6 +2730,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		aeroDeployAngle = 60
 		EVENTS
 		{
 		}
@@ -2819,6 +2829,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		aeroDeployAngle = 60
 		EVENTS
 		{
 		}

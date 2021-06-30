@@ -1,5 +1,5 @@
 ship = M3X Starliner
-version = 1.5.0
+version = 1.8.0
 description = Easy to fly 32 Kerbal SSTO¨AG:1 CLEAVER mode toggle¨AG2: toggle docking port¨AG3: toggle Solar Panels
 type = SPH
 size = 18.3409805,10.0513802,25.2663364
@@ -8,6 +8,8 @@ persistentId = 3203417931
 rot = 0,0,0,1
 missionFlag = Mk3Expansion/Agencies/AI
 vesselType = Debris
+upgraded = 1.12 RV-105 RCS Thruster Block replacement // Replaces the old RV-105 RCS Thruster Block for the new RV-105 RCS Thruster Block.
+upgraded = 1.8 ModuleControlSurface // Upgrades control authority settings for control surfaces.
 PART
 {
 	part = M3X.ShovelCockpit_4293489284
@@ -658,7 +660,7 @@ PART
 		isEnabled = True
 		stagingEnabled = True
 		moduleID = fuelSwitch
-		currentSubtype = Structural
+		currentSubtype = Str
 		EVENTS
 		{
 		}
@@ -733,7 +735,7 @@ PART
 		isEnabled = True
 		stagingEnabled = True
 		moduleID = fuelSwitch
-		currentSubtype = Structural
+		currentSubtype = Str
 		EVENTS
 		{
 		}
@@ -835,11 +837,11 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = RCSBlock_4293103768
-	link = RCSBlock_4293088484
+	attN = top,mk3FuselageLF.25_4293242084_0|0|0
+	link = RCSBlock.v2_4293103768
+	link = RCSBlock.v2_4293088484
 	link = linearRcs_4293074546
 	link = linearRcs_4293074228
-	attN = top,mk3FuselageLF.25_4293242084_0|0|0
 	EVENTS
 	{
 	}
@@ -1097,6 +1099,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 25
 		EVENTS
 		{
 		}
@@ -1852,7 +1855,7 @@ PART
 		isEnabled = True
 		stagingEnabled = True
 		moduleID = modelswitch
-		currentSubtype = Trailing Edge
+		currentSubtype = TrailingEdge
 		EVENTS
 		{
 		}
@@ -1949,7 +1952,7 @@ PART
 		isEnabled = True
 		stagingEnabled = True
 		moduleID = modelswitch
-		currentSubtype = Trailing Edge
+		currentSubtype = TrailingEdge
 		EVENTS
 		{
 		}
@@ -2044,7 +2047,7 @@ PART
 		isEnabled = True
 		stagingEnabled = True
 		moduleID = modelswitch
-		currentSubtype = Trailing Edge
+		currentSubtype = TrailingEdge
 		EVENTS
 		{
 		}
@@ -2139,7 +2142,7 @@ PART
 		isEnabled = True
 		stagingEnabled = True
 		moduleID = modelswitch
-		currentSubtype = Trailing Edge
+		currentSubtype = TrailingEdge
 		EVENTS
 		{
 		}
@@ -3269,6 +3272,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 25
 		EVENTS
 		{
 		}
@@ -3345,6 +3349,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 25
 		EVENTS
 		{
 		}
@@ -3421,6 +3426,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 25
 		EVENTS
 		{
 		}
@@ -3497,6 +3503,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 25
 		EVENTS
 		{
 		}
@@ -3525,7 +3532,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4293103768
+	part = RCSBlock.v2_4293103768
 	partName = Part
 	persistentId = 2357205144
 	pos = 0.0603933074,11.4212446,-16.8745766
@@ -3593,7 +3600,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4293088484
+	part = RCSBlock.v2_4293088484
 	partName = Part
 	persistentId = 2242556886
 	pos = 0.0618776754,7.78164959,-16.8745766

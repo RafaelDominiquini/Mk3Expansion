@@ -1,5 +1,5 @@
 ship = M3X Orbital Tug
-version = 1.5.0
+version = 1.8.0
 description = 
 type = VAB
 size = 6.64907122,26.706955,12.005702
@@ -8,6 +8,8 @@ persistentId = 208496252
 rot = 0,0,0,1
 missionFlag = Squad/Flags/stripes
 vesselType = Debris
+upgraded = 1.12 Protective Rocket Nose Cone Mk7 replacement // Replaces the old Protective Rocket Nose Cone Mk7 for the new Protective Rocket Nose Cone Mk7.
+upgraded = 1.8 ModuleControlSurface // Upgrades control authority settings for control surfaces.
 PART
 {
 	part = M3X.InlineCockpit_4292812598
@@ -298,7 +300,7 @@ PART
 		isEnabled = True
 		stagingEnabled = True
 		moduleID = fuelSwitch
-		currentSubtype = Xenon
+		currentSubtype = XE
 		EVENTS
 		{
 		}
@@ -2774,8 +2776,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = rocketNoseCone_4292146364
-	attN = top,rocketNoseCone_4292146364_0|1.875|0
+	link = rocketNoseCone.v2_4292146364
+	attN = top,rocketNoseCone.v2_4292146364_0|1.875|0
 	attN = bottom,M3X.AligningDockingPort_4292442828_0|-1.875|0
 	EVENTS
 	{
@@ -2811,7 +2813,7 @@ PART
 }
 PART
 {
-	part = rocketNoseCone_4292146364
+	part = rocketNoseCone.v2_4292146364
 	partName = Part
 	persistentId = 4055478610
 	pos = 1.42403018,27.4787235,-1.96425903
@@ -3719,6 +3721,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 15
 		EVENTS
 		{
 		}
@@ -3795,6 +3798,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 15
 		EVENTS
 		{
 		}
@@ -3871,6 +3875,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 15
 		EVENTS
 		{
 		}
@@ -3947,6 +3952,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 15
 		EVENTS
 		{
 		}
@@ -4023,6 +4029,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 15
 		EVENTS
 		{
 		}
@@ -4099,6 +4106,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 15
 		EVENTS
 		{
 		}

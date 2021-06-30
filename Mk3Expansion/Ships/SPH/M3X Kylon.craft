@@ -1,5 +1,5 @@
 ship = M3X Kylon
-version = 1.5.0
+version = 1.8.0
 description = Rocket-powered spaceplane.¨AG1: toggle Main/OMS engines
 type = SPH
 size = 21.8970718,7.98575592,39.5310783
@@ -8,6 +8,8 @@ persistentId = 1481752347
 rot = 0,0,0,1
 missionFlag = Squad/Flags/stripes
 vesselType = Debris
+upgraded = 1.8 ModuleControlSurface // Upgrades control authority settings for control surfaces.
+upgraded = 1.8 ModuleAeroSurface // Upgrades control authority settings for control surfaces.
 PART
 {
 	part = M3XDroneCore_4294183638
@@ -864,7 +866,7 @@ PART
 		isEnabled = True
 		stagingEnabled = True
 		moduleID = fuelSwitch
-		currentSubtype = LiquidFuel/Oxidizer
+		currentSubtype = LF+Ox
 		EVENTS
 		{
 		}
@@ -957,7 +959,7 @@ PART
 		isEnabled = True
 		stagingEnabled = True
 		moduleID = fuelSwitch
-		currentSubtype = LiquidFuel/Oxidizer
+		currentSubtype = LF+Ox
 		EVENTS
 		{
 		}
@@ -1636,6 +1638,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 25
 		EVENTS
 		{
 		}
@@ -1712,6 +1715,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 25
 		EVENTS
 		{
 		}
@@ -1788,6 +1792,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 25
 		EVENTS
 		{
 		}
@@ -1864,6 +1869,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 25
 		EVENTS
 		{
 		}
@@ -1941,6 +1947,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		aeroDeployAngle = 60
 		EVENTS
 		{
 		}
@@ -2039,6 +2046,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		aeroDeployAngle = 60
 		EVENTS
 		{
 		}
@@ -2190,7 +2198,7 @@ PART
 		isEnabled = True
 		stagingEnabled = True
 		moduleID = fuelSwitch
-		currentSubtype = LiquidFuel/Oxidizer
+		currentSubtype = LF+Ox
 		EVENTS
 		{
 		}
@@ -2542,7 +2550,7 @@ PART
 		isEnabled = True
 		stagingEnabled = True
 		moduleID = fuelSwitch
-		currentSubtype = LiquidFuel/Oxidizer
+		currentSubtype = LF+Ox
 		EVENTS
 		{
 		}
@@ -2641,6 +2649,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 25
 		EVENTS
 		{
 		}
@@ -2717,6 +2726,7 @@ PART
 		partDeployInvert = False
 		authorityLimiter = 100
 		stagingEnabled = True
+		deployAngle = 25
 		EVENTS
 		{
 		}
